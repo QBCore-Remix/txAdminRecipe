@@ -388,10 +388,6 @@ tasks:
     ref: main
     src: https://github.com/qbcore-remix/qb-keyminigame
 
-  - action: download_github
-    dest: ./resources/[qb]/qb-fitbit
-    ref: main
-    src: https://github.com/qbcore-remix/qb-fitbit
 
   - action: download_github
     dest: ./resources/[qb]/qb-commandbinding
