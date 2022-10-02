@@ -95,6 +95,11 @@ tasks:
     dest: ./resources/[standalone]/LegacyFuel
     ref: master
     src: https://github.com/qbcore-remix/LegacyFuel
+    
+  - action: download_github
+    dest: ./resources/[standalone]/fivem-appearance
+    ref: main
+    src: https://github.com/iLLeniumStudios/fivem-appearance
 
     # VOICE
   - action: download_github
@@ -181,11 +186,11 @@ tasks:
     dest: ./resources/[qb]/qb-atms
     ref: main
     src: https://github.com/qbcore-remix/qb-atms
-
+    
   - action: download_github
-    dest: ./resources/[qb]/qb-hud
+    dest: ./resources/[ps]/ps-hud
     ref: main
-    src: https://github.com/qbcore-remix/qb-hud
+    src: https://github.com/Project-Sloth/ps-hud
 
   - action: download_github
     dest: ./resources/[qb]/qb-management
@@ -239,11 +244,11 @@ tasks:
     dest: ./resources/[qb]/qb-crypto
     ref: main
     src: https://github.com/qbcore-remix/qb-crypto
-
+    
   - action: download_github
-    dest: ./resources/[qb]/qb-weathersync
+    dest: ./resources/[standalone]/cd_easytime
     ref: main
-    src: https://github.com/qbcore-remix/qb-weathersync
+    src: https://github.com/QBCore-Remix/cd_easytime
 
   - action: download_github
     dest: ./resources/[qb]/qb-policejob
