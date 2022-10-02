@@ -219,14 +219,14 @@ CREATE TABLE IF NOT EXISTS `playerskins` (
 CREATE TABLE IF NOT EXISTS `player_outfits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(50) DEFAULT NULL,
-  `outfitname` varchar(50) NOT NULL,
+  `outfitname` varchar(50) NOT NULL DEFAULT '0',
   `model` varchar(50) DEFAULT NULL,
-  `skin` text DEFAULT NULL,
-  `outfitId` varchar(50) NOT NULL,
+  `props` varchar(1000) DEFAULT NULL,
+  `components` varchar(1500) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `citizenid` (`citizenid`),
-  KEY `outfitId` (`outfitId`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+  UNIQUE KEY `citizenid_outfitname_model` (`citizenid`,`outfitname`,`model`),
+  KEY `citizenid` (`citizenid`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `player_vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
