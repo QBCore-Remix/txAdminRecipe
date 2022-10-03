@@ -249,6 +249,11 @@ tasks:
     dest: ./resources/[standalone]/cd_easytime
     ref: main
     src: https://github.com/QBCore-Remix/cd_easytime
+    
+  - action: download_github
+    dest: ./resources/[standalone]/PauseMenu
+    ref: main
+    src: https://github.com/QBCore-Remix/PauseMenu
 
   - action: download_github
     dest: ./resources/[qb]/qb-policejob
